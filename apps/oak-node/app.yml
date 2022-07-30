@@ -7,7 +7,7 @@ version: 3
 metadata:
   category: Automation
   name: Oak Node
-  version: "0.3.2"
+  version: "0.3.x"
   tagline: Do more with your LND node
   description: >-
     Oak Node gives you Scheduled Payments. Now you can send sats to a Lightning Address on a schedule.
@@ -28,7 +28,7 @@ metadata:
 
 containers:
   - name: main
-    image: oak-node.net/oak:v0.3.2@sha256:ed6dc77c36032b036b7182b02305b76312fa6c89c7cafc6047cb59d32ab1e507
+    image: oak-node.net/oak:test-mynode@sha256:70ce2cf05893be4feada2c78e20a8dafb56ed1b4dcafb53245acf5a953f559dd
     user: "1000:1000"
     restart: on-failure
     stop_grace_period: 1m
